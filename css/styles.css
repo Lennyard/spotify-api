@@ -1,0 +1,26 @@
+#titleName {
+    text-align: center;
+}
+
+#beatles {
+    width: 150px;
+    height: 150px;
+    
+}
+
+#ofMonMen {
+    width: 150px;
+    height: 150px;
+    margin-left: 3em;
+}
+
+#ludovico {
+    width: 150px;
+    height: 150px;
+    margin-left: 3em;
+}
+
+span.imgFolder {
+    display: block;
+    text-align: center;
+}
