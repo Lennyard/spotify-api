@@ -48,3 +48,9 @@ span.mediaBtns {
     display: block;
     text-align: center;
 }
+
+.artist-results {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 0 auto 1em auto;
+}
