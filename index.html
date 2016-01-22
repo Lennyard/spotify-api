@@ -4,18 +4,21 @@
     <meta charset="UTF-8">
     <title>Spotify API</title>
     <link rel="stylesheet" href="css/styles.css"/>
+    <script src="node_modules/handlebars/dist/handlebars.min.js"></script>
 </head>
 <body>
    
    <div class="container">
        <h1 id="titleName">SPOTIFY API</h1>
+       
+       <div class="artist-results"></div>
     
         <span class="imgFolder">
             <img src="images/beatles.jpg" alt="The Beatles" id="beatles"></img>
             <img src="images/omam.jpg" alt="Of Monsters and Men" id="ofMonMen"></img>
             <img src="images/ludovico.jpg" alt="Ludovico Einaudi" id="ludovico"></img>
         </span> 
-    <h3 id="songTitle">Song, Artist, Album </h3>
+        <h3 id="songTitle">Song, Artist, Album </h3>
     
         <span class="mediaBtns">
             <input id="rewindBtn" type="image" src="images/rewind.png" alt="Rewind button">
@@ -23,7 +26,28 @@
             <input id="forwardBtn" type="image" src="images/forward.png" alt="Forward button">
 
         </span>
+        <input type="text" placeholder="Search Artist Here..." id="query" />
+        <button id="submitBtn">GO!</button>
    </div>
     
+    <script type="text/x-handlebars-template" id="template">
+    
+        {{#each artists}}
+            <div id="artName">Artist: {{name}}</div>
+
+        {{/each}}
+       
+    </script>
+    <script type="text/x-handlebars-template" id="artist-template">
+       {{#each artists.items}}
+            <div>
+              <a href="#" class="artist-info" data-id="{{id}}">
+               <h3>Artist: {{name}}</h3>
+               <img src="{{images.2.url}}" /></a>
+            </div>
+        {{/each}}
+    </script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 </html>
