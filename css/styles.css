@@ -2,55 +2,13 @@
     text-align: center;
 }
 
-#beatles {
-    width: 150px;
-    height: 150px;
-    
-}
-
-#ofMonMen {
-    width: 150px;
-    height: 150px;
-    margin-left: 3em;
-}
-
-#ludovico {
-    width: 150px;
-    height: 150px;
-    margin-left: 3em;
-}
-
-span.imgFolder {
-    display: block;
-    text-align: center;
-}
-
-#songTitle {
-    text-align: center;
-}
-
-#rewindBtn {
-    width: 50px;
-    height: 50px;    
-}
-
-#playBtn {
-    width: 50px;
-    height: 50px;
-}
-
-#forwardBtn {
-    width: 50px;
-    height: 50px;
-}
-
-span.mediaBtns {
-    display: block;
-    text-align: center;
-}
-
 .artist-results {
-	border: 1px solid black;
+    text-align: center;
+	/*border: 1px solid black;*/
 	padding: 5px;
 	margin: 0 auto 1em auto;
+}
+
+#inputArtist {
+  text-align: center;
 }
