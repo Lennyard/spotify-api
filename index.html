@@ -10,16 +10,42 @@
 
 <body>
 
-  <div class="container">
-    <h1 id="titleName">SPOTIFY API</h1>
-    <div id="inputArtist">
-      <input type="text" placeholder="Search Artist Here..." id="query" />
-      <button id="submitBtn">GO!</button>
+  <header>
+
+    <nav>
+      <ul class="clearfix">
+        <li><a class="help" href="#">Help</a></li>
+      </ul>
+    </nav>
+     
+    <div class="hidden">
+      <div class="content">
+        <h3>What is this program for?</h3>
+        <div>
+          <p>This is a search engine to find similar artists to YOUR favorite artist. Here's what you do: </p>
+          <ul>
+            <li>1) Type your favorite artist, or any artist at all, and click on "GO!"</li>
+            <li>2) If you typed in a specific artist, you will get that artist; but if you typed in an incomplete artist name, you will be greeted with many artists with that name to choose from.</li>
+            <li>3) Click on the artist you want to find similar artists to. and...!</li>
+            <li>4) You will see all the similar artists on the next page.</li>
+          </ul>
+          <p>Hope you enjoy this program. So, ready to find similar artists to your musical taste?</p>
+          <a class="close" href="#">Ready!</a>
+        </div>
+      </div>
     </div>
+     <div class="container">
+      <h1 id="titleName">SPOTIFY API</h1>
+      <h2 id="title"></h2>
+      <div id="inputArtist">
+        <input type="text" placeholder="Search Artist Here..." id="query" />
+        <button id="submitBtn">GO!</button>
+      </div>
+     </div>
 
-    <div class="artist-results"></div>
+  </header>
 
-  </div>
+  <div class="artist-results"></div>
 
   <script type="text/x-handlebars-template" id="template">
 
