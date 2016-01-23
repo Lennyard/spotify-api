@@ -30,5 +30,13 @@ $(document).ready(function () {
     var query = $("#query").val();
     searchArtist(query);
   });
+  
+  $(".help").click(function(){
+    $(".hidden").fadeIn(1000);
+  });
+  
+  $("a.close").click(function(){
+    $(".hidden").fadeOut(1000);
+  });
 
 });
